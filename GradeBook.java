@@ -1,3 +1,4 @@
+
 import java.util.ArrayList;
 
 public class GradeBook
@@ -78,15 +79,24 @@ public class GradeBook
       else
          return sum() - minimum();
    }
-   
-   //Task 1
+   //gets score
    public int getScoreSize() {
-	   return scoresSize;
-   }
-   
-   public String toString() {
-	   return scores + " " + scores;
-   }
-}
 
+       return scoresSize;
+
+}
+   public String toString() {
+
+       String u = "";
+
+       // adds scores up and removes spacing
+
+       for (int i = 0; i < scoresSize; i++) {
+
+             u += scores[i] + " ";
+
+       }
+	return u.trim();
+}
+}
 
